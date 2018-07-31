@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <title>Highcharts Demo</title>
+
+  
+    
+
+
+
+
+<script type='text/javascript'>//<![CDATA[
+
+$(function () {
+    $('#containergrp').highcharts({
+        chart: {
+            type: 'pie',
+            options3d: {
+                enabled: true,
+                alpha: 45
+            }
+        },
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: 'Empower Meetings'
+        },
+        plotOptions: {
+            pie: {
+                innerSize: 100,
+                depth: 45
+            }
+        },
+         credits: {
+    enabled: false
+  },
+        series: [{
+            name: 'Total',
+            data: [
+                ['Wasted', 65],
+                ['Actions', 10],
+                ['Meeting', 20],
+                ['Planing', 5]
+            ]
+        }]
+    });
+});
+//]]> 
+
+</script>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="containergrp" style="height: 300px; width:400px"></div>
+  
+</body>
+
+</html>
+
